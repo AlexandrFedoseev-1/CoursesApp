@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="title_text">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textFontWeight">500</item>
+    </style>
+
+    <style name="edit_text">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="login_btn">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+
+
+    <style name="action_text">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textFontWeight">600</item>
+    </style>
+
+    <style name="action_btn">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textFontWeight">600</item>
+    </style>
+
+    <style name="blur_info_text">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textFontWeight">400</item>
+    </style>
+
+    <style name="info_text">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textFontWeight">400</item>
+    </style>
+
+    <style name="sort_btn">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textFontWeight">500</item>
+    </style>
+
+    <style name="CircularCornerStyle">
+        <item name="cornerSize">@dimen/corner_radius_12</item>
+    </style>
+
+    <style name="title_favorite">
+        <item name="android:textSize">@dimen/text_size_22</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textFontWeight">400</item>
+    </style>
+
+
+</resources>

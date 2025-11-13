@@ -1,5 +1,39 @@
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_28">28dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="margin_100">100dp</dimen>
+
+    <dimen name="edit_text_height">40dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="img_course_height">114dp</dimen>
+    <dimen name="tv_rate_height">22dp</dimen>
+    <dimen name="button_fav_height">28dp</dimen>
+    <dimen name="tv_title_course_height">18dp</dimen>
+    <dimen name="login_title_height">36dp</dimen>
+    <dimen name="email_title_height">18dp</dimen>
+    <dimen name="password_title_height">18dp</dimen>
+    <dimen name="registration_height">15dp</dimen>
+    <dimen name="height_1">1dp</dimen>
+
+    <dimen name="btn_filter_height">56dp</dimen>
+    <dimen name="btn_sort_height">20dp</dimen>
+
+
+    <dimen name="corner_radius_12">12dp</dimen>
+
+    <dimen name="text_size_28">28sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+
 </resources>
