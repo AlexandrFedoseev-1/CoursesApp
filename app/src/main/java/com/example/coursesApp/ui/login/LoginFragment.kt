@@ -1,6 +1,5 @@
 package com.example.coursesApp.ui.login
 
-import android.R.attr.end
 import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
@@ -92,8 +91,4 @@ class LoginFragment : Fragment() {
         }
     }
 
-
-    companion object {
-        fun newInstance() = LoginFragment()
-    }
 }

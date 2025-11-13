@@ -7,7 +7,6 @@ import com.example.data.mapper.CourseMapper.toEntity
 import com.example.domain.api.CoursesRepository
 import com.example.domain.model.Course
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.map
 
 class CoursesRepositoryImpl(

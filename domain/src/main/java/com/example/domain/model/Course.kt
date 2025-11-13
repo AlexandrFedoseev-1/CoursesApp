@@ -1,6 +1,5 @@
 package com.example.domain.model
 
-import java.time.LocalDate
 
 data class Course(
     val id: Int,
