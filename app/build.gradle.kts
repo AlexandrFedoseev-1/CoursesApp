@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.oursesapp"
+    namespace = "com.example.coursesApp"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.oursesapp"
+        applicationId = "com.example.coursesApp"
         minSdk = 29
         targetSdk = 36
         versionCode = 1
@@ -39,6 +39,21 @@ android {
 }
 
 dependencies {
+
+    implementation(project(":domain"))
+    implementation(project(":data"))
+
+    implementation(libs.koin.android)
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.retrofit)
+    implementation(libs.retrofit2.converter.gson)
+    implementation(libs.okhttp)
+    implementation(libs.gson)
+    implementation(libs.adapterdelegates4)
+
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

@@ -1,8 +1,27 @@
 <resources>
     <string name="app_name">СoursesApp</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
+    <string name="title_dashboard">Favorites</string>
     <string name="title_notifications">Notifications</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Вход</string>
+    <string name="email">Email</string>
+    <string name="email_hint">example@gmail.com</string>
+    <string name="password">Пароль</string>
+    <string name="password_hint">Введите пароль</string>
+    <string name="no_account">Нету аккаунта?</string>
+    <string name="registration">&#160;Региcтрация</string>
+    <string name="forgot_password">Забыл пароль</string>
+
+    <string name="search_hint">Search courses...</string>
+    <string name="by_date_added">По дате добавления</string>
+    <string name="more">Подробнее</string>
+    <string name="main">Главная</string>
+    <string name="favourites">Избранное</string>
+    <string name="account">Аккаунт</string>
+
+    <string name="url_vk">https://vk.com/</string>
+    <string name="url_ok">https://ok.ru/</string>
+    <string name="price_format">%s ₽</string>
+
 </resources>
