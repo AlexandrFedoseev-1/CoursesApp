@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/card_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_16"
+    app:cardCornerRadius="@dimen/corner_radius_12">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_gray"
+        android:paddingBottom="@dimen/margin_16">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_course"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/img_course_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/course_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/CircularCornerStyle" />
+
+        <TextView
+            android:id="@+id/tv_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tv_rate_height"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:background="@drawable/blur_bg"
+            android:drawablePadding="@dimen/margin_4"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/margin_6"
+            android:textAppearance="@style/blur_info_text"
+            app:drawableStartCompat="@drawable/star_fill"
+            app:layout_constraintBottom_toBottomOf="@id/img_course"
+            app:layout_constraintStart_toStartOf="parent"
+            tool:text="4.9" />
+
+        <TextView
+            android:id="@+id/tv_publish_date"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tv_rate_height"
+            android:layout_marginStart="@dimen/margin_4"
+            android:background="@drawable/blur_bg"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/margin_6"
+            android:textAppearance="@style/blur_info_text"
+            app:layout_constraintBottom_toBottomOf="@id/tv_rate"
+            app:layout_constraintStart_toEndOf="@id/tv_rate"
+            tool:text="22 Мая 2024" />
+
+        <ImageButton
+            android:id="@+id/button_fav"
+            android:layout_width="@dimen/button_fav_height"
+            android:layout_height="@dimen/button_fav_height"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:background="@drawable/blur_bg_20"
+            android:src="@drawable/fav_off"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/margin_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_course">
+
+            <TextView
+                android:id="@+id/tv_title_course"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/tv_title_course_height"
+                android:layout_marginTop="@dimen/margin_16"
+                android:textAppearance="@style/title_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_course"
+                tool:text="Java-разработчик с нуля" />
+
+            <TextView
+                android:id="@+id/tv_text_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_12"
+                android:alpha="0.5"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textAppearance="@style/info_text"
+                tool:text="Освой профессию 3D-дженералиста и стань универсальным специалистом, который умеет создавать 3D-модели, текстуры и анимации, а также может строить карьеру в геймдеве, кино, рекламе или дизайне." />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:textAppearance="@style/title_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_course"
+                tool:text="12 000 Р" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:includeFontPadding="false"
+            android:text="@string/more"
+            android:textAppearance="@style/action_btn"
+            app:drawableEndCompat="@drawable/arrow_right_short_fill"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

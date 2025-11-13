@@ -1,22 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/margin_16"
+    android:paddingTop="@dimen/margin_16"
     tools:context=".ui.home.HomeFragment">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_background"
+            android:drawableStart="@drawable/search"
+            android:hint="@string/search_hint"
+            android:inputType="text"
+            android:drawablePadding="@dimen/margin_16"
+            android:paddingHorizontal="@dimen/margin_16"
+            android:textAppearance="@style/edit_text"
+            android:textColor="?attr/colorOnPrimary"
+            android:textColorHint="@color/white_alpha" />
+        <ImageButton
+            android:id="@+id/btn_filter"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_width="@dimen/btn_filter_height"
+            android:layout_height="@dimen/btn_filter_height"
+            android:background="@drawable/edit_text_background"
+            android:src="@drawable/filter_ic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
     <TextView
-        android:id="@+id/text_home"
+        android:id="@+id/btn_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/btn_sort_height"
+        android:layout_marginTop="@dimen/margin_20"
+        android:includeFontPadding="false"
+        android:layout_gravity="end"
+        android:text="@string/by_date_added"
+        android:textAppearance="@style/sort_btn"
+        app:drawableEndCompat="@drawable/arrow_down_up"
+        android:drawablePadding="@dimen/margin_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_courses"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_marginTop="@dimen/margin_16"
+        android:clipToPadding="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+       />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+
+</LinearLayout>
